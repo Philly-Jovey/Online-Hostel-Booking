@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Online Hostel Booking</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}#hostel-card-grid [hidden]{display:none!important;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-on-surface":"#eef0ff","on-tertiary-fixed":"#2a1700","on-error":"#ffffff","surface-variant":"#dae2fd","outline-variant":"#c4c5d5","on-background":"#131b2e","on-surface":"#131b2e","primary-fixed":"#dde1ff","tertiary":"#4c2e00","on-tertiary-container":"#ffa929","secondary-container":"#5bb8fe","on-primary-fixed":"#001453","tertiary-container":"#6b4200","error-container":"#ffdad6","secondary":"#006398","secondary-fixed-dim":"#93ccff","on-error-container":"#93000a","on-surface-variant":"#444653","outline":"#757684","surface-dim":"#d2d9f4","primary-container":"#1e40af","on-secondary-fixed-variant":"#004b73","primary-fixed-dim":"#b8c4ff","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","error":"#ba1a1a","on-primary":"#ffffff","on-primary-container":"#a8b8ff","on-secondary-fixed":"#001d31","surface-bright":"#faf8ff","secondary-fixed":"#cce5ff","tertiary-fixed-dim":"#ffb95f","surface-container":"#eaedff","on-tertiary-fixed-variant":"#653e00","tertiary-fixed":"#ffddb8","surface-tint":"#3755c3","background":"#faf8ff","surface-container-low":"#f2f3ff","on-tertiary":"#ffffff","inverse-primary":"#b8c4ff","inverse-surface":"#283044","primary":"#00288e","on-secondary-container":"#00476e","surface-container-highest":"#dae2fd","surface-container-high":"#e2e7ff","on-primary-fixed-variant":"#173bab","surface":"#faf8ff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"2.5rem","space-lg":"1.5rem","gutter-lg":"2rem","margin-md":"2rem","space-xs":"0.25rem","space-sm":"0.5rem","gutter-md":"1.5rem",gutter:"1rem",margin:"1rem","margin-lg":"3rem","space-md":"1rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"label-lg":["Inter"],"label-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-xl-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="Online Hostel Booking Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM34Pk7vAr8sfuVzOsy39Aarm1EmfOduURQ9b4KK2Mhtugv3Q-2mrgbsRlpkDzqgJE38OnBMyJi4rNk-bfq2JpCWBCu7vL1_TOUzn_RGoMa9vtQDucOUxtCFp6xH30OGuS1ZCbknHuP9Y1BkxZdHz_oLRWJKWHWloTgo5p9ImkfXGhyfEY020WXGIvu_UhOYNCBhC19P804aH0hEAf7k5yBSk_kkvamW4_2ipINRQ5jgj9G6qNjlZH"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors">Online Hostel Booking</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Find Your Campus. Find Your Stay.</span></div></a></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="home" href="#">Home</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="universities" href="#">Universities</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="find-hostels" href="#">Find Hostels</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="how-it-works" href="#">How It Works</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="about" href="#">About</a></nav><div class="flex items-center gap-space-sm"><a class="hidden lg:flex items-center gap-space-xs px-space-md py-space-sm font-label-lg text-label-lg text-secondary bg-surface-container-high hover:bg-surface-container-highest transition-colors rounded-lg" data-path="custodian-hub" href="#"><span class="material-symbols-outlined text-secondary text-lg">add_business</span><span>List Your Hostel</span></a><div class="hidden sm:flex items-center px-space-sm py-space-xs bg-surface-container rounded-full"><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">UGX</span></div><button aria-label="Notifications" class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-full transition-colors relative" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><a class="hidden sm:inline-flex px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="login" href="#">Login</a><a class="px-space-md py-space-sm bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-primary shadow-sm active:scale-95 transition-all" data-path="register" href="#">Register</a><img alt="Profile" class="hidden sm:block w-8 h-8 rounded-full object-cover ml-space-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCztddT03gvpE8fxOirXHGaFVSsGKMktACqYKrfiUkLfr0HiiLDZZ5M4WABGaSXO1MHX0nqv_aD1h_HG64qXlfelJzzP5c055kGwdyYLbqO4NbI9cJZk7TLclLqRYbSOZnpgJaXxEXXOqEfq7zDzSh4Fc4kFr1PjBbQqpi1uKm4K28yKcfx8F_L6zwH6tpDaMgQofKR1UpA2SAj_59lHp4I1Xp0K1CJx3QeDhAyrDPd6k4wbXakAeAv"/></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-high/40 via-surface to-background pb-space-xl pt-space-lg">
+<!-- Ambient blurred background elements -->
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 -right-32 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto px-gutter flex flex-col gap-space-lg">
+<!-- Breadcrumb & Trust Pill -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-md py-1 bg-surface-container-highest text-on-surface font-label-md text-label-md rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Kampala • Mukono • Gulu • Mbarara
+        </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm rounded-full">
+          Semester 1 &amp; 2 Intake Openings
+        </span>
+</div>
+<!-- Hero Heading Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">
+            Find Your Campus.<br class="hidden sm:inline"/>
+<span class="text-secondary">Find Your Stay.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Discover trusted hostels and affordable student accommodation near universities across Uganda. Fully verified in-person, zero middleman broker fees, and safe reservations via MTN MoMo &amp; Airtel Money.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end lg:items-end">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-sm rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">shield</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">100% Anti-Scam Shield</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Guild &amp; Custodian Vetted</span>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm bg-surface-container text-on-surface hover:bg-surface-container-highest font-label-lg text-label-lg rounded-xl transition-all shadow-sm" data-path="custodian-hub" href="#">
+<span class="material-symbols-outlined text-primary text-lg">hotel_class</span>
+<span>List Your Hostel (For Custodians)</span>
+</a>
+</div>
+</div>
+<!-- MAIN SEARCH WIDGET CONTAINER -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-space-md sm:p-space-lg">
+<form class="flex flex-col gap-space-md" id="hostel-search-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- University Select -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1" for="university-selector">
+<span class="material-symbols-outlined text-secondary text-sm">school</span>
+<span>University</span>
+</label>
+<select class="w-full h-12 px-space-sm bg-surface rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer" id="university-selector">
+<option value="all">All Universities</option>
+<option value="makerere">Makerere University (MAK)</option>
+<option value="kyambogo">Kyambogo University (KYU)</option>
+<option value="mubs">Makerere Univ. Business School (MUBS)</option>
+<option value="ndejje">Ndejje University</option>
+<option value="kiu">Kampala International University (KIU)</option>
+<option value="isbat">ISBAT University</option>
+<option value="victoria">Victoria University</option>
+<option value="iuea">International University of East Africa (IUEA)</option>
+</select>
+</div>
+<!-- Room Type -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1" for="type-selector">
+<span class="material-symbols-outlined text-secondary text-sm">bedroom_parent</span>
+<span>Room Type</span>
+</label>
+<select class="w-full h-12 px-space-sm bg-surface rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer" id="type-selector">
+<option value="all">Any Room Type</option>
+<option value="single-self">Single Self-Contained</option>
+<option value="double-shared">Double (2 Beds)</option>
+<option value="triple">Triple Shared</option>
+<option value="studio">Studio Flat / Bedsitter</option>
+</select>
+</div>
+<!-- Price Per Semester -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1" for="price-selector">
+<span class="material-symbols-outlined text-secondary text-sm">payments</span>
+<span>Budget (UGX / Sem)</span>
+</label>
+<select class="w-full h-12 px-space-sm bg-surface rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer" id="price-selector">
+<option value="any">Any Price</option>
+<option value="under-600k">Under UGX 600,000</option>
+<option value="600k-1m">UGX 600k - 1,000,000</option>
+<option value="1m-1.5m">UGX 1,000,000 - 1.5M</option>
+<option value="above-1.5m">UGX 1,500,000+</option>
+</select>
+</div>
+</div>
+<!-- Bottom Row: Filter tags & High Visibility Action Button -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Popular Quick Filters:</span>
+<button class="px-space-sm py-1 bg-surface-container rounded-full text-on-surface hover:bg-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+                Free Wi-Fi
+              </button>
+<button class="px-space-sm py-1 bg-surface-container rounded-full text-on-surface hover:bg-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+                Campus Shuttle Bus
+              </button>
+<button class="px-space-sm py-1 bg-surface-container rounded-full text-on-surface hover:bg-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+                Backup Generator
+              </button>
+<button class="px-space-sm py-1 bg-surface-container rounded-full text-on-surface hover:bg-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+                Ladies Only Wing
+              </button>
+</div>
+<button class="inline-flex items-center justify-center gap-space-xs px-space-xl py-3 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-md hover:bg-primary active:scale-95 transition-all cursor-pointer" type="submit">
+<span class="material-symbols-outlined text-xl">search</span>
+<span>Search Hostels</span>
+</button>
+</div>
+</form>
+</div>
+<!-- HERO VISUAL BENTO & SOCIAL PROOF PILLS -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md pt-space-sm items-center">
+<!-- Main Visual Display with Overlaid Floating Pills -->
+<div class="lg:col-span-8 relative rounded-xl overflow-hidden shadow-lg h-72 sm:h-96">
+<div class="w-full h-full bg-cover bg-center" data-alt="High quality architectural exterior of a modern multi-story student hostel near Makerere Kikoni in Kampala Uganda with clean sunny courtyards students walking and lush green palm trees bathed in tropical sunlight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDu7v7Xk3jMJlbbU5LyEHigqtMgDVzkBXdmWXGAF_vmhSMtLewuMv1oXST5u6b25285MV7rWVgRutuXpQPN1KbH6xsCwNOmN9lM8ovCBH-7iApGxup37_wmQMA_4OfXZLRG_1ahPcbe2XvTBSUoEb9FebS5xQQH_ACRRUh4YOGxMYWg_GeKMbZ1qt6-ma5fCzQDFKydgFdeG5zbb9jFAU3ZQWN21EhtG5TVF4r30k8hSGj3zxuc8efz')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-space-md sm:p-space-lg text-on-primary">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Kikoni • Banda • Nakawa • Mukono</span>
+<h2 class="font-headline-md text-headline-md font-bold mt-1 text-on-primary">Physical Inspections Completed for New Semester</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container max-w-lg mt-1">
+                Every listed room is vetted for verified water supply, perimeter wall security, and custodian accreditation.
+              </p>
+</div>
+</div>
+<!-- Top-Right Pill -->
+<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-md px-space-md py-1.5 rounded-full shadow-md flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Live Occupancy 2025</span>
+</div>
+</div>
+<!-- Floating Metric Grid Cards -->
+<div class="lg:col-span-4 grid grid-cols-2 gap-space-sm">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">500+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Verified Hostels</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Physically mapped &amp; certified</span>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">school</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">20+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Universities</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Across Uganda</span>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-2xl">groups</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">10,000+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Students Housed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Safely matched since 2022</span>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl">contactless</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">MoMo Escrow</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">MTN &amp; Airtel protected</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK STATS BANNER / TRUST TICKER -->
+<section class="w-full bg-surface-container-low py-space-md">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-md font-bold uppercase tracking-wider">
+          Student Guild Endorsed
+        </span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">
+          Trusted by Student Guild Councils at MAK, Kyambogo &amp; MUBS
+        </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md w-full lg:w-auto text-center lg:text-left">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">timer</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">&lt; 5 Minutes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Average Booking</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">price_check</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">0% Hidden Fees</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero Broker Markups</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">fact_check</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">24/7 Custodians</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct On-Site Desk</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">security</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Zero-Scam Guarantee</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Escrow Verification</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- POPULAR UNIVERSITIES SECTION -->
+<section class="w-full py-space-xl bg-background">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Academic Hubs</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Popular University Campuses</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Browse verified hostels directly surrounding major Ugandan tertiary institutions. Select your university to see current semester vacancies.
+          </p>
+</div>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold transition-colors" data-path="universities" href="#">
+<span>View All 20+ Universities</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Campus Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-md">
+<!-- 1. Makerere University -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col overflow-hidden">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Makerere University main administrative building tower iconic colonial architectural facade in Kampala with lush green lawns and university students under blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqJCpCpcwVe4K2EQy3Xyyp86VOeglJZt87w7ygHMtN3qC8-y3yaJ6IHV7ysw0TO-Cd_OJvFoTtJzsIOgzsfDTZU_zVy8WuB5RNi_4GJ7ByoioGr250wR0MvdxPDx-ukj-duHU34bbRl2lzXJlsQyiaHCw1BA9PxOkIsp9y3YGanopo8OkVzF4QF4EufHaUZCHcl20QGeaNtffRzquJ4xFg90PVHU05oH6y4MfnzALyFiUyOaR_1uBa"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded-full font-label-sm text-label-sm text-primary font-semibold">
+              Kampala • Main &amp; Kikoni
+            </span>
+<span class="absolute bottom-3 right-3 bg-primary-container text-on-primary px-space-sm py-0.5 rounded-full font-label-sm text-label-sm">
+              142 Available Hostels
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Makerere University (MAK)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Kikoni, Wandegeya, Sir Apollo Kaggwa Rd, Makerere West, Katanga
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Starting from</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">UGX 750,000 <span class="font-normal text-body-sm text-on-surface-variant">/ sem</span></span>
+</div>
+<a class="px-space-md py-2 bg-surface-container text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded-lg transition-colors inline-flex items-center gap-1" data-path="find-hostels" href="#">
+<span>Explore</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 2. Kyambogo University -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col overflow-hidden">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Kyambogo University East campus grounds with modern lecture facilities student walkways and leafy green trees in Banda Kampala Uganda" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhiaRuCuymDXV3t7KOQsnnhl5VIWLfUWUebmJtoon7vlGVPhquiXpybWNrpZFkUZ5eHmRvdF91_lGrI-yAnuJJKXWGTfAW_0V-tLCbfSopCew1FYeXE-bVDvarxlXmgniIGTUfwTwo_feVIXGWKD9GSg9YdgkoLzO0COgxYWlJ_X3-Y6rS6tTPgsXjfQXTaqSrqXRCTO_tW2MctkJH_CETLhfMLsrs19MSl7VyQ70THe17tx4RipcG"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded-full font-label-sm text-label-sm text-primary font-semibold">
+              Banda &amp; Kyambogo Hill
+            </span>
+<span class="absolute bottom-3 right-3 bg-primary-container text-on-primary px-space-sm py-0.5 rounded-full font-label-sm text-label-sm">
+              88 Available Hostels
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Kyambogo University (KYU)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Banda East Gate, West End, Kyambogo Hill, Kireka access
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Starting from</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">UGX 550,000 <span class="font-normal text-body-sm text-on-surface-variant">/ sem</span></span>
+</div>
+<a class="px-space-md py-2 bg-surface-container text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded-lg transition-colors inline-flex items-center gap-1" data-path="find-hostels" href="#">
+<span>Explore</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 3. MUBS -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col overflow-hidden">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Makerere University Business School MUBS Nakawa campus modern business faculties and lively student promenade in vibrant Kampala sunshine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY_CzO7oX4p52y0HVwr394yTjAEXgjXqrp2LYFLUxXhIBK9RIjY0aljlg1TD-4IoXPkL3hdtLfdJsQ4ReOqYZIUh8J_G3aCMQeh0CS1yyQ6xiuYojMXSqOUIk6c6Ij-6mVo82_6LtQkwazqr3pAfnatRj4zXW1cJu-mrkqoxl8_eUhr2CP5CEoMRQrQqRJR0VIBNKyfscx54Jwbpuf4c4jfH9QaiFbkoYwsIDK8VXCG03slbNbQqEa"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded-full font-label-sm text-label-sm text-primary font-semibold">
+              Nakawa &amp; Bugolobi
+            </span>
+<span class="absolute bottom-3 right-3 bg-primary-container text-on-primary px-space-sm py-0.5 rounded-full font-label-sm text-label-sm">
+              96 Available Hostels
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">MUBS (Nakawa)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Port Bell Rd, Nakawa market axis, Bugolobi flats, Katalima
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Starting from</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">UGX 800,000 <span class="font-normal text-body-sm text-on-surface-variant">/ sem</span></span>
+</div>
+<a class="px-space-md py-2 bg-surface-container text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded-lg transition-colors inline-flex items-center gap-1" data-path="find-hostels" href="#">
+<span>Explore</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 4. UCU Mukono -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col overflow-hidden">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Uganda Christian University UCU Mukono scenic red-brick campus pathways clean lawns and contemporary student residences in Mukono Uganda" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2UrrAZ0ft-Gbo60fibG1Yo0lb00q2dWo1HmCEZtD65Ps-0R7Y_MvaIlNe5bqPaauTzEm4T2BfQCdS2bL0H-wgpv383CKSJd7mX8y3udtR4heFi2qkOZz_Ud0H7swjEy44VnyUKGKYoJyCcDCUmsNXRrYmonRrv2Y7VOV6gOg-US4bXwsMoW0hUi0G_uEgGsMh9nuS8Nvx02NF9MlbFjgsUUy4ksv9vP6nlGF6jeUN_9erDNYEnF8M"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded-full font-label-sm text-label-sm text-primary font-semibold">
+              Mukono Main Campus
+            </span>
+<span class="absolute bottom-3 right-3 bg-primary-container text-on-primary px-space-sm py-0.5 rounded-full font-label-sm text-label-sm">
+              64 Available Hostels
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Uganda Christian University (UCU)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Bugujju, Bishop Tucker Rd, Mukono central perimeter
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Starting from</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">UGX 900,000 <span class="font-normal text-body-sm text-on-surface-variant">/ sem</span></span>
+</div>
+<a class="px-space-md py-2 bg-surface-container text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded-lg transition-colors inline-flex items-center gap-1" data-path="find-hostels" href="#">
+<span>Explore</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 5. KIU Kansanga -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col overflow-hidden">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Kampala International University KIU Kansanga multi-story educational complex with diverse international students walking along Ggaba road Kampala" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeli4uHyU50UxRi2Nf_KVJHwtKot-7oXDSedCh6nMhI3nuqVyDFS4pwVVCbZTkrTGlVWlgZ8L84Uo68x70WPRKpfXW4KKSqK-jGo31qLs8GluYTCSLJnhRaH9ZE1t-gsFSkfDAxQHvN_lz2Wn280ISOcwbS7KOK66S62LOrMPjhM1u0_SgxCxFZia4OcT-wEtUu7D2fxdGJ2UR7YTTYr07dYplF31Sz7G_VaClYl7uiqD3OenfnHMv"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded-full font-label-sm text-label-sm text-primary font-semibold">
+              Kansanga &amp; Ggaba
+            </span>
+<span class="absolute bottom-3 right-3 bg-primary-container text-on-primary px-space-sm py-0.5 rounded-full font-label-sm text-label-sm">
+              52 Available Hostels
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">KIU (Kansanga)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Ggaba Road, Kansanga clocktower area, Bbunga borders
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Starting from</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">UGX 600,000 <span class="font-normal text-body-sm text-on-surface-variant">/ sem</span></span>
+</div>
+<a class="px-space-md py-2 bg-surface-container text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded-lg transition-colors inline-flex items-center gap-1" data-path="find-hostels" href="#">
+<span>Explore</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 6. Gulu University -->
+<div class="group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col overflow-hidden">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Gulu University Northern Uganda campus buildings surrounded by open savannah landscape sunny afternoon with students studying under trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2UOVb2eI8CaSI11_tv2zbE8NgMHA63Qt6iDjZS44pm-Zj-9KrIemNXhIe_8wZL9WE2lBJtvFJTvFVgQQk6C9Cqqtvri1oMtYQbFGskxkEoMsTMTJjtaDLv8N6Vt77kyF7pgcviRSoLaOLqhOx4rSRKZXtSjUg1qwyRmOFdpxyVOfU051wBFHtRtaOcAVbOog-cy7KTqvnlVIhafC56oE7S90IUYrKq4DbA2KFflFHkCxQl_Qw7vjg"/>
+<span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded-full font-label-sm text-label-sm text-primary font-semibold">
+              Laroo &amp; Gulu City
+            </span>
+<span class="absolute bottom-3 right-3 bg-primary-container text-on-primary px-space-sm py-0.5 rounded-full font-label-sm text-label-sm">
+              38 Available Hostels
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Gulu University (GU)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Laroo division, Pece, Gulu main campus student residential zone
+              </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Starting from</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">UGX 450,000 <span class="font-normal text-body-sm text-on-surface-variant">/ sem</span></span>
+</div>
+<a class="px-space-md py-2 bg-surface-container text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md rounded-lg transition-colors inline-flex items-center gap-1" data-path="find-hostels" href="#">
+<span>Explore</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURED HOSTELS SECTION (With Filter Tabs) -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">50 Sample Listings</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Hostels Near Your Campus</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Browse sample listings near Makerere, Kyambogo, MUBS, Ndejje, KIU, ISBAT, Victoria University, and IUEA. These examples are not real or verified properties; confirm all details before publishing.
+          </p>
+</div>
+<!-- Filter Tabs -->
+<div class="flex flex-wrap items-center gap-1.5 pb-1 sm:pb-0" id="hostel-filter-tabs">
+<button aria-pressed="true" class="px-space-md py-1.5 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg whitespace-nowrap shadow-sm" data-campus-filter="all" type="button">All (50)</button>
+<button aria-pressed="false" class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md rounded-lg whitespace-nowrap transition-colors" data-campus-filter="makerere" type="button">Makerere (7)</button>
+<button aria-pressed="false" class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md rounded-lg whitespace-nowrap transition-colors" data-campus-filter="kyambogo" type="button">Kyambogo (7)</button>
+<button aria-pressed="false" class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md rounded-lg whitespace-nowrap transition-colors" data-campus-filter="mubs" type="button">MUBS (7)</button>
+<button aria-pressed="false" class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md rounded-lg whitespace-nowrap transition-colors" data-campus-filter="ndejje" type="button">Ndejje (6)</button>
+<button aria-pressed="false" class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md rounded-lg whitespace-nowrap transition-colors" data-campus-filter="kiu" type="button">KIU (6)</button>
+<button aria-pressed="false" class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md rounded-lg whitespace-nowrap transition-colors" data-campus-filter="isbat" type="button">ISBAT (6)</button>
+<button aria-pressed="false" class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md rounded-lg whitespace-nowrap transition-colors" data-campus-filter="victoria" type="button">Victoria (6)</button>
+<button aria-pressed="false" class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md rounded-lg whitespace-nowrap transition-colors" data-campus-filter="iuea" type="button">IUEA (5)</button>
+</div>
+</div>
+<!-- Hostel sample listings -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-lg" id="hostel-card-grid">
+<!-- CARD 1: Olympia Hostel -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col sm:flex-row">
+<div class="relative sm:w-2/5 h-56 sm:h-auto shrink-0">
+<img class="w-full h-full object-cover" data-alt="Olympia Hostel Kikoni student accommodation in Kampala bright modern building exterior with balcony railings and secure gated perimeter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_HGyQDF-cMu15yNUT_zeUDHT3e7V5ZPjaCnaWmwnBK3zcPVYET0AqsuHBX3a4oerCOR9uoSea9045DZ2xRZ72VeBtejxUrM4h2No-yF7MRDvK68hxwAE5CiHmhWw-Vbgmq_MABK1r0DMT9pAnC47q5Wcn-eICewYO3EdPTzYT0-QPSAWKrCC7AKVUT2RyRo_RN11qatI1MquINeVumJtGHGtYNlDZRGHh2vOgHB8UBUdFGzUM8Ii_"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded-full shadow flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                4.8 (128)
+              </span>
+</div>
+<div class="absolute bottom-2 left-2">
+<span class="px-space-xs py-0.5 bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm rounded-md font-semibold">
+                3 Rooms Left
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-surface-container text-primary font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-xs">verified</span>
+                  Verified &amp; Inspected
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Makerere (Kikoni)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Olympia Hostel</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                400m from MAK Western Gate • Single Self-Contained &amp; Double
+              </p>
+<!-- Amenities icons -->
+<div class="flex flex-wrap items-center gap-space-xs my-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">wifi</span> Wi-Fi
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">bolt</span> Generator
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">directions_bus</span> Shuttle
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">videocam</span> CCTV
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Per Semester</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">UGX 1,400,000</span>
+</div>
+<a aria-label="Learn how to book Olympia Hostel" class="inline-flex items-center gap-1.5 px-space-md py-2 bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md rounded-lg shadow-sm transition-colors" href="#hostel-booking-guide">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+                Book Now
+              </a>
+</div>
+</div>
+</div>
+<!-- CARD 2: Bavaria Hostel -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col sm:flex-row">
+<div class="relative sm:w-2/5 h-56 sm:h-auto shrink-0">
+<img class="w-full h-full object-cover" data-alt="Bavaria Hostel Banda near Kyambogo University neat student residential rooms complex with secure biometric gates and compound" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX5_BcnD10mIeyaxYU4xawq1T6Op5DndWPE5n2qoetl66yV_Qv5lxzTsxv5jQ5-O_2AvcOW9HQVGJiiDmfF049O_mvVTtY0AK6vA24BtPWWeDHTzWh7j_glWc83Rt_npzvPCFP2tf14ZCq9_9qk2N9IRwT9C1uxnfSgn3ucBCLk_sBafUg08YYc-AI9P19DXqLuGuBaliEmT6_RzWE_plzrRnZGuI5fA4oDjkQof4QHukPEkCQ34mr"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded-full shadow flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                4.6 (94)
+              </span>
+</div>
+<div class="absolute bottom-2 left-2">
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded-md font-semibold">
+                Available (14 Rooms)
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-surface-container text-primary font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-xs">verified</span>
+                  Verified &amp; Inspected
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kyambogo (Banda)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Bavaria Hostel</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                250m to East Gate • Double &amp; Triple Shared Options
+              </p>
+<!-- Amenities icons -->
+<div class="flex flex-wrap items-center gap-space-xs my-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">fingerprint</span> Biometric Gate
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">water_drop</span> Water Heater
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">tv</span> DSTV Lounge
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">restaurant</span> Cafeteria
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Per Semester</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">UGX 650,000</span>
+</div>
+<a aria-label="Learn how to book Bavaria Hostel" class="inline-flex items-center gap-1.5 px-space-md py-2 bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md rounded-lg shadow-sm transition-colors" href="#hostel-booking-guide">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+                Book Now
+              </a>
+</div>
+</div>
+</div>
+<!-- CARD 3: Akamwesi Hostel -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col sm:flex-row">
+<div class="relative sm:w-2/5 h-56 sm:h-auto shrink-0">
+<img class="w-full h-full object-cover" data-alt="Akamwesi Hostel Wandegeya Kampala modern high-capacity student hostel with sparkling swimming pool and sunny fitness recreation area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnXmbDzy2Bos1ujbzcU6iUh7jY6tvyXRcDUXUuIm7PIHPqj2uGl1cehszdLiwP-5FkfAs2bxsml_BTAZi1CqCyYJ26ieIORAOHU7FSVr6IoDODbaDg_8xVNjhno73v6ANttBQsbS7ES7bdPQ0MSWZcB42eUF3lZqFPn7_CqT3oDkuevCq-m-h8DhoCUodvVlTfST_T-nBBfjBQIxnJ08uVHrPnbmDZ8q8tDz8wdUxp6yeAPdW17Mvv"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded-full shadow flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                4.7 (110)
+              </span>
+</div>
+<div class="absolute bottom-2 left-2">
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded-md font-semibold">
+                Available (8 Rooms)
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-surface-container text-primary font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-xs">verified</span>
+                  Verified &amp; Inspected
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Makerere (Nakulabye/Wandegeya)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Akamwesi Hostel</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                600m to Main Gate • Single Self &amp; Double Luxury
+              </p>
+<!-- Amenities icons -->
+<div class="flex flex-wrap items-center gap-space-xs my-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">pool</span> Pool
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">fitness_center</span> Gym
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">local_library</span> Study Library
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">directions_bus</span> Shuttle
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Per Semester</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">UGX 1,100,000</span>
+</div>
+<a aria-label="Learn how to book Akamwesi Hostel" class="inline-flex items-center gap-1.5 px-space-md py-2 bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md rounded-lg shadow-sm transition-colors" href="#hostel-booking-guide">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+                Book Now
+              </a>
+</div>
+</div>
+</div>
+<!-- CARD 4: Ideal Executive Hostel -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col sm:flex-row">
+<div class="relative sm:w-2/5 h-56 sm:h-auto shrink-0">
+<img class="w-full h-full object-cover" data-alt="Ideal Executive Hostel Nakawa near MUBS business campus well lit student apartment rooms with modern windows and secure balconies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEz0ww8Whq__2vPd6GLUU-9gdlu8azkB5Xs8zji1OkN58l-Brti6ht5hNzBYyXySetvRZR2QOYalW6_cNdA-ZhFN8WnfxAwmRd-jhApoAKoSpyDXE7vT2-cOk1hTfx1BX_Usu4plpjktesRSeK_tS_bezcnXDV3vRbLKxs8ukqOA5AqI6kra6Mzk2hqrfxC4B_6eZ8aY8ESzx3qoFOi8gunhGs4hiE94I_eiP6nrHroVO57fO1H-l9"/>
+<div class="absolute top-2 left-2 flex flex-col gap-1">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded-full shadow flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                4.9 (142)
+              </span>
+</div>
+<div class="absolute bottom-2 left-2">
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded-md font-semibold">
+                Available (6 Rooms)
+              </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-surface-container text-primary font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-xs">verified</span>
+                  Verified &amp; Inspected
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">MUBS (Nakawa)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ideal Executive Hostel</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                300m to Faculty of Commerce • Single Self &amp; Studio Flat
+              </p>
+<!-- Amenities icons -->
+<div class="flex flex-wrap items-center gap-space-xs my-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">solar_power</span> Solar Inverter
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">countertops</span> Kitchenette
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">wifi</span> High-Speed Net
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">
+<span class="material-symbols-outlined text-sm text-secondary">balcony</span> Balcony
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Per Semester</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">UGX 1,250,000</span>
+</div>
+<a aria-label="Learn how to book Ideal Executive Hostel" class="inline-flex items-center gap-1.5 px-space-md py-2 bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md rounded-lg shadow-sm transition-colors" href="#hostel-booking-guide">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+                Book Now
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-sm">
+<div aria-live="polite" class="font-body-sm text-body-sm text-on-surface-variant" id="hostel-results-count" role="status"></div>
+<nav aria-label="Hostel listing pages" class="flex flex-wrap items-center justify-center gap-1.5" id="hostel-pagination"></nav>
+</div>
+</section>
+<!-- HOW IT WORKS SECTION (Simple 4-Step Process) -->
+<section class="w-full py-space-xl bg-background scroll-mt-20" id="hostel-booking-guide">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col gap-space-lg">
+<div class="text-center max-w-2xl mx-auto flex flex-col items-center">
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Simple • Transparent • Safe</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">How Online Hostel Booking Works</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Say goodbye to moving under the sun with fraudulent brokers. Book a verified room near your lecture hall in four easy steps.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-sm">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-primary-fixed-dim font-bold">01</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Choose Your Campus</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+              Select your institution, campus wing, and preferred residential zone like Kikoni, Banda, or Nakawa.
+            </p>
+</div>
+<div class="pt-space-xs font-label-sm text-label-sm text-secondary font-semibold">
+            → Instant Campus Matching
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-primary-fixed-dim font-bold">02</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">photo_library</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Explore &amp; Filter</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+              Browse authentic verified photography, exact semester tariffs in UGX, floor plans, and verified amenities.
+            </p>
+</div>
+<div class="pt-space-xs font-label-sm text-label-sm text-secondary font-semibold">
+            → 100% Real Room Specs
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-primary-fixed-dim font-bold">03</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">bed</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Select Room &amp; Bed</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+              Choose between Single Self-Contained, Double, or Shared blocks with real-time vacancy updates directly from wardens.
+            </p>
+</div>
+<div class="pt-space-xs font-label-sm text-label-sm text-secondary font-semibold">
+            → Guaranteed Room Hold
+          </div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg text-primary-fixed-dim font-bold">04</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Book &amp; Pay Securely</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+              Confirm your booking with MTN MoMo, Airtel Money, or bank transfer. Receive an official digital receipt &amp; custodian contact.
+            </p>
+</div>
+<div class="pt-space-xs font-label-sm text-label-sm text-secondary font-semibold">
+            → Instant Booking Pass
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY ONLINE HOSTEL BOOKING (Trust, Safety & Usability Bento) -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">The Standard in Student Housing</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Why Students &amp; Parents Rely On Us</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Designed specifically for Uganda's unique university ecosystem to protect students from accommodation fraud and poor living conditions.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-highest px-space-md py-2 rounded-xl text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-lg">local_police</span>
+<span>Zero Scam Enforcement Standard</span>
+</div>
+</div>
+<!-- Feature Grid: 6 Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-md">
+<!-- 1. Physical Verification -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">100% In-Person Physical Verification</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Every hostel undergoes physical checklist audits by Online Hostel Booking field agents: high boundary wall perimeter security, secure locks, dedicated water reservoir capacity, and active guard coverage.
+          </p>
+</div>
+<!-- 2. Real-Time Availability -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">event_available</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Real-Time Room Availability</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            No more walking long distances under the midday heat only to find "Hostel Full." Custodians update their vacant bed counts synchronously on the system daily.
+          </p>
+</div>
+<!-- 3. Transparent Pricing -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Transparent Semester Pricing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Completely eliminates unverified commission agents and roadside brokers. What you see on Online Hostel Booking is the authentic, non-inflated hostel management price in UGX.
+          </p>
+</div>
+<!-- 4. Mobile Money Escrow -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">phone_android</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Seamless MTN &amp; Airtel MoMo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Pay safely from any part of Uganda or abroad. Your booking fee is held in escrow and disbursed to the custodian only upon physical room key handover.
+          </p>
+</div>
+<!-- 5. Genuine Student Reviews -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">rate_review</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Authentic Student Community Reviews</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Read honest feedback from past student residents detailing realistic nighttime noise levels, Wi-Fi performance during exam season, and water tank availability.
+          </p>
+</div>
+<!-- 6. 24/7 Safety Hotline -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">emergency</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">24/7 Emergency Support &amp; Wardens</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Immediate phone line access to hostel wardens, local university security liaisons, and Online Hostel Booking dispatch for prompt emergency coordination.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- B2B CALL TO ACTION: FOR HOSTEL OWNERS & CUSTODIANS -->
+<section class="w-full py-space-xl bg-background">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="bg-primary text-on-primary rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+<div class="lg:col-span-7 p-space-lg sm:p-space-xl flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<span class="px-space-sm py-1 bg-surface-container-lowest/15 text-primary-fixed font-label-sm text-label-sm rounded-full w-max">
+              Hostel Landlords • Wardens • Custodians
+            </span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary">
+              Have a Hostel or Student Rental? Fill 100% of Your Beds Early.
+            </h2>
+<p class="font-body-md text-body-md text-on-primary-container max-w-xl">
+              Connect directly with over 35,000 university students actively looking for accommodation before the semester begins. Say goodbye to empty rooms and broker disputes.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary">Real-time room occupancy dashboard</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary">Instant MTN &amp; Airtel rent settlement</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary">SMS &amp; WhatsApp student booking alerts</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-primary">Verified university student identity</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-sm">
+<a class="px-space-xl py-3 bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label-lg text-label-lg rounded-xl transition-all shadow-md text-center" data-path="custodian-hub" href="#">
+              List Your Hostel Now
+            </a>
+<a class="px-space-lg py-3 bg-on-primary/10 hover:bg-on-primary/20 text-on-primary font-label-lg text-label-lg rounded-xl transition-colors text-center" data-path="custodian-hub" href="#">
+              View Custodian Demo
+            </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative min-h-64 lg:min-h-full">
+<div class="w-full h-full bg-cover bg-center" data-alt="Friendly Ugandan hostel custodian and property manager in front of modern clean student hostel building holding tablet managing student reservations with genuine welcoming smile" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHZfCAsC9XhsvK8pc-Yuu-iUlMsht_zseDbAHoH1WexdvBViu2K-jxWjK32TgG9GL4lpMNHSPV9sf3Sy42EwmxY_e3mruxdlon_OwxL0oZOrEt_8fNclttUXf0btcvTrXl2eL5zyX29huINeKZhIUlCAJQjRkNvcDczyAy5N2l34fArm6uA9NjzMO3o4d-BTsAtVAZrijTap0HP8nEWe1L2AdD4KYuOuylQwh9Da2sc5KAZe780J9x')">
+<div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-primary via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE FAQ ACCORDION -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-gutter flex flex-col gap-space-lg">
+<div class="text-center flex flex-col items-center">
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Frequently Asked Questions</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Got Questions? We Have Answers</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-lg">
+          Everything you need to know about booking student hostels, payments, and campus security.
+        </p>
+</div>
+<div class="flex flex-col gap-space-sm" id="faq-accordion">
+<!-- FAQ 1 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm p-space-md open:bg-surface-container-lowest transition-colors cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>When is the best time to book my hostel for the upcoming semester?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="pt-space-sm font-body-md text-body-md text-on-surface-variant">
+            We recommend booking 3 to 5 weeks before the university reporting date. High-demand self-contained single rooms near Makerere Kikoni, MUBS Nakawa, and Kyambogo East Gate fill up very quickly. Early booking ensures you get your preferred floor and room orientation.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm p-space-md open:bg-surface-container-lowest transition-colors cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>Can I pay rent in installments through Mobile Money?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="pt-space-sm font-body-md text-body-md text-on-surface-variant">
+            Yes! Most partner hostels on Online Hostel Booking allow an initial booking deposit (typically 30% to 50%) via MTN Mobile Money or Airtel Money to lock your room. The remaining balance can be scheduled in agreed installments directly with the hostel custodian before mid-semester exams.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm p-space-md open:bg-surface-container-lowest transition-colors cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>How does Online Hostel Booking protect me from fake hostel brokers?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="pt-space-sm font-body-md text-body-md text-on-surface-variant">
+            Unlike informal street brokers who charge viewing fees and frequently vanish, every hostel on Online Hostel Booking is verified in person by our physical field team. Your payment is held safely until you receive your room key, and all bookings generate a verifiable digital receipt acknowledged by the registered hostel owner.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm p-space-md open:bg-surface-container-lowest transition-colors cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-on-surface list-none">
+<span>What happens if I need to cancel or change rooms?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="pt-space-sm font-body-md text-body-md text-on-surface-variant">
+            If your intake status changes or you need to shift to another hostel wing, Online Hostel Booking provides a 72-hour cancellation grace period from booking time. Our student support team assists in reallocating your deposit without penalty.
+          </div>
+</details>
+</div>
+</div>
+</section>
+<!-- FINAL CALL TO ACTION SECTION -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-5xl mx-auto px-gutter">
+<div class="bg-gradient-to-br from-primary via-primary-container to-secondary p-space-lg sm:p-space-xl rounded-xl shadow-xl text-center text-on-primary flex flex-col items-center gap-space-md">
+<span class="px-space-md py-1 bg-surface-container-lowest/20 rounded-full font-label-md text-label-md text-secondary-fixed">
+          Don't Wait Until Intake Week
+        </span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary max-w-2xl">
+          Ready to Secure Your Semester Accommodation Without the Stress?
+        </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-xl">
+          Join over 10,000 students who found safe, comfortable hostels close to their lecture halls in minutes.
+        </p>
+<!-- Quick campus selector pills -->
+<div class="flex flex-wrap items-center justify-center gap-space-xs max-w-xl">
+<a class="px-space-md py-1.5 bg-surface-container-lowest/15 hover:bg-surface-container-lowest/30 rounded-full font-label-sm text-label-sm text-on-primary transition-colors" data-path="find-hostels" href="#">
+            Makerere Hostels
+          </a>
+<a class="px-space-md py-1.5 bg-surface-container-lowest/15 hover:bg-surface-container-lowest/30 rounded-full font-label-sm text-label-sm text-on-primary transition-colors" data-path="find-hostels" href="#">
+            Kyambogo Hostels
+          </a>
+<a class="px-space-md py-1.5 bg-surface-container-lowest/15 hover:bg-surface-container-lowest/30 rounded-full font-label-sm text-label-sm text-on-primary transition-colors" data-path="find-hostels" href="#">
+            MUBS Hostels
+          </a>
+<a class="px-space-md py-1.5 bg-surface-container-lowest/15 hover:bg-surface-container-lowest/30 rounded-full font-label-sm text-label-sm text-on-primary transition-colors" data-path="find-hostels" href="#">
+            UCU Mukono Hostels
+          </a>
+<a class="px-space-md py-1.5 bg-surface-container-lowest/15 hover:bg-surface-container-lowest/30 rounded-full font-label-sm text-label-sm text-on-primary transition-colors" data-path="find-hostels" href="#">
+            KIU Kansanga
+          </a>
+</div>
+<div class="pt-space-sm flex flex-col sm:flex-row items-center gap-space-sm">
+<a class="px-space-xl py-3.5 bg-surface-container-lowest text-primary hover:bg-surface-bright font-label-lg text-label-lg rounded-xl shadow-lg transition-transform active:scale-95 font-bold" data-path="find-hostels" href="#">
+            Get Started Today • Browse Hostels
+          </a>
+<a class="px-space-lg py-3.5 bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary font-label-lg text-label-lg rounded-xl transition-colors" data-path="help-center" href="#">
+            Contact Student Support (+256 700 123 456)
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  const hostelCampuses = [
+    { key: 'makerere', name: 'Makerere University', count: 7, areas: ['Kikoni', 'Wandegeya', 'Katanga', 'Makerere Kavule'] },
+    { key: 'kyambogo', name: 'Kyambogo University', count: 7, areas: ['Banda', 'Kyambogo Hill', 'Kireka', 'Bweyogerere'] },
+    { key: 'mubs', name: 'MUBS', count: 7, areas: ['Nakawa', 'Banda', 'Bugolobi', 'Kiswa'] },
+    { key: 'ndejje', name: 'Ndejje University', count: 6, areas: ['Ndejje campus area', 'Buwama', 'Kampala campus area'] },
+    { key: 'kiu', name: 'Kampala International University (KIU)', count: 6, areas: ['Kansanga', 'Ggaba Road', 'Bbunga'] },
+    { key: 'isbat', name: 'ISBAT University', count: 6, areas: ['Lugogo Bypass', 'Nakawa', 'Bugolobi'] },
+    { key: 'victoria', name: 'Victoria University', count: 6, areas: ['Jinja Road', 'Kamwokya', 'Nakasero'] },
+    { key: 'iuea', name: 'International University of East Africa (IUEA)', count: 5, areas: ['Kansanga', 'Ggaba Road', 'Bbunga'] }
+  ];
+  const hostelGrid = document.getElementById('hostel-card-grid');
+  const hostelTabs = document.querySelectorAll('#hostel-filter-tabs [data-campus-filter]');
+  const hostelForm = document.getElementById('hostel-search-form');
+  const universitySelector = document.getElementById('university-selector');
+  const roomSelector = document.getElementById('type-selector');
+  const priceSelector = document.getElementById('price-selector');
+  const resultsCount = document.getElementById('hostel-results-count');
+  const pagination = document.getElementById('hostel-pagination');
+  const pageSize = 10;
+  let currentPage = 1;
+  const pricePoints = [450000, 550000, 650000, 750000, 900000, 1100000, 1250000, 1400000, 1600000, 1800000];
+  const roomTypes = ['single-self', 'double-shared', 'single-self', 'double-shared', 'triple', 'studio'];
+  const roomLabels = {
+    'single-self': 'Single self-contained',
+    'double-shared': 'Double shared',
+    triple: 'Triple shared',
+    studio: 'Studio / bedsitter'
+  };
+  const hostelImages = [
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuC_HGyQDF-cMu15yNUT_zeUDHT3e7V5ZPjaCnaWmwnBK3zcPVYET0AqsuHBX3a4oerCOR9uoSea9045DZ2xRZ72VeBtejxUrM4h2No-yF7MRDvK68hxwAE5CiHmhWw-Vbgmq_MABK1r0DMT9pAnC47q5Wcn-eICewYO3EdPTzYT0-QPSAWKrCC7AKVUT2RyRo_RN11qatI1MquINeVumJtGHGtYNlDZRGHh2vOgHB8UBUdFGzUM8Ii_',
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuCX5_BcnD10mIeyaxYU4xawq1T6Op5DndWPE5n2qoetl66yV_Qv5lxzTsxv5jQ5-O_2AvcOW9HQVGJiiDmfF049O_mvVTtY0AK6vA24BtPWWeDHTzWh7j_glWc83Rt_npzvPCFP2tf14ZCq9_9qk2N9IRwT9C1uxnfSgn3ucBCLk_sBafUg08YYc-AI9P19DXqLuGuBaliEmT6_RzWE_plzrRnZGuI5fA4oDjkQof4QHukPEkCQ34mr',
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuCnXmbDzy2Bos1ujbzcU6iUh7jY6tvyXRcDUXUuIm7PIHPqj2uGl1cehszdLiwP-5FkfAs2bxsml_BTAZi1CqCyYJ26ieIORAOHU7FSVr6IoDODbaDg_8xVNjhno73v6ANttBQsbS7ES7bdPQ0MSWZcB42eUF3lZqFPn7_CqT3oDkuevCq-m-h8DhoCUodvVlTfST_T-nBBfjBQIxnJ08uVHrPnbmDZ8q8tDz8wdUxp6yeAPdW17Mvv',
+    'https://lh3.googleusercontent.com/aida-public/AB6AXuCEz0ww8Whq__2vPd6GLUU-9gdlu8azkB5Xs8zji1OkN58l-Brti6ht5hNzBYyXySetvRZR2QOYalW6_cNdA-ZhFN8WnfxAwmRd-jhApoAKoSpyDXE7vT2-cOk1hTfx1BX_Usu4plpjktesRSeK_tS_bezcnXDV3vRbLKxs8ukqOA5AqI6kra6Mzk2hqrfxC4B_6eZ8aY8ESzx3qoFOi8gunhGs4hiE94I_eiP6nrHroVO57fO1H-l9'
+  ];
+  let nextListingNumber = 1;
+  const hostelListings = hostelCampuses.flatMap(campus =>
+    Array.from({ length: campus.count }, (_, index) => {
+      const number = nextListingNumber++;
+      return {
+        campus,
+        number,
+        area: campus.areas[index % campus.areas.length],
+        price: pricePoints[(number - 1) % pricePoints.length],
+        roomType: roomTypes[(number - 1) % roomTypes.length]
+      };
+    })
+  );
+
+  hostelGrid.innerHTML = hostelListings.map(({ campus, number, area, price, roomType }) => `
+    <article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col" data-campus="${campus.key}" data-price="${price}" data-room-type="${roomType}">
+      <img class="w-full h-48 object-cover" src="${hostelImages[(number - 1) % hostelImages.length]}" alt="Sample hostel accommodation near ${campus.name}">
+      <div class="p-space-md flex flex-col gap-space-sm">
+      <div class="flex items-center justify-between gap-space-sm">
+        <span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm rounded">
+          <span class="material-symbols-outlined text-xs">info</span> Sample listing
+        </span>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">Example ${String(number).padStart(2, '0')}</span>
+      </div>
+      <div>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface">Sample Hostel ${String(number).padStart(2, '0')}</h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">${campus.name} • ${area}</p>
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-space-sm">
+        <span class="px-space-sm py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded">${roomLabels[roomType]}</span>
+        <span class="font-label-md text-label-md text-primary font-bold">UGX ${price.toLocaleString('en-UG')}</span>
+      </div>
+      <div aria-label="Example amenities; confirm availability with the hostel" class="flex flex-wrap gap-space-xs">
+        <span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded"><span class="material-symbols-outlined text-sm text-secondary">wifi</span> Wi-Fi</span>
+        <span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded"><span class="material-symbols-outlined text-sm text-secondary">bolt</span> Generator</span>
+        <span class="inline-flex items-center gap-1 px-2 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded"><span class="material-symbols-outlined text-sm text-secondary">menu_book</span> Study area</span>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant">Sample only — amenities and details are examples; confirm availability before booking.</p>
+      <a aria-label="Learn how to book Sample Hostel ${String(number).padStart(2, '0')}" class="inline-flex items-center justify-center gap-1.5 px-space-md py-2 bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md rounded-lg shadow-sm transition-colors" href="#hostel-booking-guide">
+        <span class="material-symbols-outlined text-base">calendar_month</span>
+        Book Now
+      </a>
+      </div>
+    </article>
+  `).join('');
+
+  const setActiveCampusTab = selectedCampus => {
+    hostelTabs.forEach(tab => {
+      const isSelected = tab.dataset.campusFilter === selectedCampus;
+      tab.setAttribute('aria-pressed', String(isSelected));
+      tab.className = isSelected
+        ? 'px-space-md py-1.5 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg whitespace-nowrap shadow-sm'
+        : 'px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md rounded-lg whitespace-nowrap transition-colors';
+    });
+  };
+
+  const priceMatches = (price, range) => {
+    switch (range) {
+      case 'under-600k': return price < 600000;
+      case '600k-1m': return price >= 600000 && price <= 1000000;
+      case '1m-1.5m': return price > 1000000 && price <= 1500000;
+      case 'above-1.5m': return price > 1500000;
+      default: return true;
+    }
+  };
+
+  const applyHostelFilters = () => {
+    const selectedCampus = universitySelector.value;
+    const selectedRoomType = roomSelector.value;
+    const selectedPrice = priceSelector.value;
+    const filteredCards = [...hostelGrid.querySelectorAll('[data-campus]')].filter(card =>
+      (selectedCampus === 'all' || card.dataset.campus === selectedCampus)
+        && (selectedRoomType === 'all' || card.dataset.roomType === selectedRoomType)
+        && priceMatches(Number(card.dataset.price), selectedPrice)
+    );
+    const pageCount = Math.ceil(filteredCards.length / pageSize);
+    currentPage = Math.min(currentPage, Math.max(pageCount, 1));
+    const firstVisibleIndex = (currentPage - 1) * pageSize;
+    const visibleCards = new Set(filteredCards.slice(firstVisibleIndex, firstVisibleIndex + pageSize));
+
+    hostelGrid.querySelectorAll('[data-campus]').forEach(card => {
+      card.hidden = !visibleCards.has(card);
+    });
+
+    resultsCount.textContent = filteredCards.length
+      ? `Showing ${firstVisibleIndex + 1}–${Math.min(firstVisibleIndex + pageSize, filteredCards.length)} of ${filteredCards.length} sample listings.`
+      : 'No sample listings match those filters. Try a different university, room type, or budget.';
+    pagination.replaceChildren();
+
+    if (pageCount > 1) {
+      const makePageButton = (label, page, { disabled = false, current = false } = {}) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = label;
+        button.disabled = disabled;
+        button.className = current
+          ? 'min-w-9 h-9 px-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm'
+          : 'min-w-9 h-9 px-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-variant disabled:opacity-40 font-label-md text-label-md transition-colors';
+        if (current) button.setAttribute('aria-current', 'page');
+        button.addEventListener('click', () => {
+          currentPage = page;
+          applyHostelFilters();
+          hostelGrid.scrollIntoView({ behavior: 'auto', block: 'start' });
+        });
+        pagination.append(button);
+      };
+
+      makePageButton('Previous', currentPage - 1, { disabled: currentPage === 1 });
+      for (let page = 1; page <= pageCount; page++) {
+        makePageButton(String(page), page, { current: page === currentPage });
+      }
+      makePageButton('Next', currentPage + 1, { disabled: currentPage === pageCount });
+    }
+  };
+
+  hostelTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      universitySelector.value = tab.dataset.campusFilter;
+      setActiveCampusTab(tab.dataset.campusFilter);
+      currentPage = 1;
+      applyHostelFilters();
+    });
+  });
+
+  universitySelector.addEventListener('change', () => {
+    setActiveCampusTab(universitySelector.value);
+    currentPage = 1;
+    applyHostelFilters();
+  });
+  roomSelector.addEventListener('change', () => {
+    currentPage = 1;
+    applyHostelFilters();
+  });
+  priceSelector.addEventListener('change', () => {
+    currentPage = 1;
+    applyHostelFilters();
+  });
+  hostelForm.addEventListener('submit', event => {
+    event.preventDefault();
+    applyHostelFilters();
+    document.getElementById('hostel-filter-tabs').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+  applyHostelFilters();
+</script></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-7xl mx-auto px-gutter pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-lg pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Online Hostel Booking Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM34Pk7vAr8sfuVzOsy39Aarm1EmfOduURQ9b4KK2Mhtugv3Q-2mrgbsRlpkDzqgJE38OnBMyJi4rNk-bfq2JpCWBCu7vL1_TOUzn_RGoMa9vtQDucOUxtCFp6xH30OGuS1ZCbknHuP9Y1BkxZdHz_oLRWJKWHWloTgo5p9ImkfXGhyfEY020WXGIvu_UhOYNCBhC19P804aH0hEAf7k5yBSk_kkvamW4_2ipINRQ5jgj9G6qNjlZH"/><span class="font-headline-sm text-headline-sm text-primary">Online Hostel Booking</span></div><p class="font-label-sm text-label-sm text-on-surface-variant">Find Your Campus. Find Your Stay.</p><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Empowering students and parents across Uganda—from Makerere, Kyambogo, and MUBS to UCU and KIU—to discover, physically verify, and secure verified hostel accommodation seamlessly.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-tertiary-fixed-variant bg-tertiary-fixed px-space-sm py-space-xs rounded-full"><span class="material-symbols-outlined text-sm">verified</span>100% Inspected Hostels</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-semibold uppercase tracking-wider">Quick Links</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="home" href="#">Home</a></li><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="universities" href="#">Universities</a></li><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="find-hostels" href="#">Find Hostels</a></li><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="pricing" href="#">Pricing</a></li><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="room-types" href="#">Room Types</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-semibold uppercase tracking-wider">Portals</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="student-portal" href="#">Student Portal</a></li><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="custodian-hub" href="#">Custodian / Landlord Hub</a></li><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="admin-portal" href="#">Admin System</a></li></ul><span class="font-label-lg text-label-lg text-on-surface font-semibold uppercase tracking-wider pt-space-xs">Support</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="help-center" href="#">Help Center</a></li><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="booking-terms" href="#">Booking Terms</a></li><li class="py-0.5"><a class="hover:text-primary transition-colors" data-path="safety-tips" href="#">Safety Tips</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-semibold uppercase tracking-wider">Contact</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><p class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-sm text-primary mt-0.5">location_on</span><span>Plot 14 Lumumba Ave, Kampala, Uganda</span></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-sm text-primary">phone</span><span>+256 700 123 456</span></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-sm text-primary">mail</span><span>support@campusstay.ug</span></p></div><div class="pt-space-sm"><span class="font-label-sm text-label-sm text-on-surface block mb-space-xs font-semibold">Accepted Payment Channels</span><div class="flex items-center gap-space-xs flex-wrap"><span class="px-space-sm py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded">MTN MoMo</span><span class="px-space-sm py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded">Airtel Money</span><span class="px-space-sm py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded">Visa</span></div></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Online Hostel Booking. All rights reserved.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="booking-terms" href="#">Terms</a><a class="hover:text-on-surface transition-colors" data-path="booking-terms" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="safety-tips" href="#">Physical Inspection Standard</a></div></div></div></footer></body></html>
